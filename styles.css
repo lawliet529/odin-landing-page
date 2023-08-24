@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.header {
+  background: #1f2937;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding: 5px 0;
+  max-width: 1200px;
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.header-links .logo {
+  border-radius: 50%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.header-links .logo-text {
+  font-size: 24px;
+  color: #f9faf8;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.header-links nav {
+  margin-left: auto;
+}
+
+.header-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 28px;
+}
+
+.hero {
+  padding: 48px 0;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.hero > * {
+  flex: 1;
+  flex-basis: 400px;
+  max-width: 100%;
+}
+
+.hero .main {
+  font-size: 48px;
+  font-weight: bold;
+  color: #f9faf8;
+}
+
+.hero .secondary {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.hero button {
+  margin-top: 8px;
+  padding: 4px 28px;
+  background: #3882f6;
+  color: #f9faf8;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.hero img {
+  width: 50%;
+  height: auto;
+  flex-shrink: 0;
+}
