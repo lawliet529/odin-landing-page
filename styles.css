@@ -10,7 +10,7 @@ body {
   padding: 0;
   margin: 0;
   max-width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {
@@ -103,4 +103,108 @@ a {
   width: 50%;
   height: auto;
   flex-shrink: 0;
+}
+
+.info {
+  color: #1f2937;
+}
+
+.info .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info .title {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  color: #1f2937;
+  margin: 32px 0;
+}
+
+.showcase {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  padding-bottom: 120px;
+}
+
+.showcase li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 164px;
+}
+
+.showcase .image-container {
+  border: 4px solid #3882f6;
+  height: 164px;
+  width: 164px;
+  border-radius: 16px;
+  flex-shrink: 0;
+}
+
+.quote {
+  background: #e5e7eb;
+  padding: 128px 0;
+  color: #1f2937;
+}
+
+.quote .container {
+  width: 800px;
+  position: relative;
+}
+
+.quote .text {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.quote .author {
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  right: 32px;
+}
+
+.call-to-action {
+  padding: 96px 0;
+}
+
+.call-to-action .container {
+  background: #3882f6;
+  border-radius: 8px;
+  padding: 48px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.call-to-action .main {
+  font-size: 24px;
+  color: #f9faf8;
+  font-weight: bold;
+}
+
+.call-to-action .secondary {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+
+.call-to-action button {
+  color: #f9faf8;
+  font-weight: bold;
+  font-size: 18px;
+  background: #3882f6;
+  border: 2px solid #f9faf8;
+  border-radius: 6px;
+  padding: 4px 32px;
 }
